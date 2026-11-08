@@ -10,7 +10,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class OverlayService extends Service {
-    private WindowManager wm; private View bubble, panel; private boolean expanded = false;
+    private WindowManager wm; private TextView bubble; private View panel; private boolean expanded = false;
     private int dp(float n) { return (int)(n * getResources().getDisplayMetrics().density); }
     @Override public void onCreate() {
         super.onCreate();
