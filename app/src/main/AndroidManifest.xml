@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
-    <application android:allowBackup="false" android:label="Game Turbo" android:theme="@style/AppTheme" android:icon="@drawable/ic_turbo">
+    <application android:allowBackup="false" android:label="Huy Turbo" android:theme="@style/AppTheme" android:icon="@drawable/ic_turbo">
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
         </activity>
