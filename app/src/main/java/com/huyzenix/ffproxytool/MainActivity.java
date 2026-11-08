@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
         LinearLayout root=column(); root.setPadding(dp(18),dp(22),dp(18),dp(24)); scroll.addView(root);
         LinearLayout header=row();
         TextView logo=txt("⚡",30,Color.WHITE); logo.setGravity(Gravity.CENTER); logo.setBackground(bg(PINK,18)); header.addView(logo,new LinearLayout.LayoutParams(dp(54),dp(54)));
-        LinearLayout names=column(); names.setPadding(dp(12),0,0,0); names.addView(txt("GAME TURBO",22,Color.WHITE)); names.addView(txt("Gaming control center • v2.0",12,MUTED)); header.addView(names);
+        LinearLayout names=column(); names.setPadding(dp(12),0,0,0); names.addView(txt("HUY TURBO",22,Color.WHITE)); names.addView(txt("Gaming control center • v2.0",12,MUTED)); header.addView(names);
         root.addView(header);
         TextView sub=txt("Tăng tiện ích khi chơi game trên HyperOS",14,MUTED); sub.setPadding(0,dp(16),0,dp(14)); root.addView(sub);
         LinearLayout game=column(); game.addView(txt("TRUNG TÂM TRÒ CHƠI",12,PINK)); game.addView(txt("Mở nhanh trò chơi",18,Color.WHITE));
