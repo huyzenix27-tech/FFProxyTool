@@ -42,7 +42,7 @@ public class OverlayService extends Service {
     private void launch(String pkg){Intent i=getPackageManager().getLaunchIntentForPackage(pkg);if(i!=null){i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);startActivity(i);}else Toast.makeText(this,"Ứng dụng chưa được cài đặt",Toast.LENGTH_SHORT).show();}
     private void showPanel(){
         LinearLayout box=new LinearLayout(this);box.setOrientation(LinearLayout.VERTICAL);box.setPadding(dp(12),dp(10),dp(12),dp(10));box.setBackground(shape(0xF21A1A28,20));
-        box.addView(label("⚡ GAME TURBO",17));box.addView(label("CÔNG CỤ NHANH",10));
+        box.addView(label("⚡ HUY TURBO",17));box.addView(label("CÔNG CỤ NHANH",10));
         Button tiktok=button("TikTok");box.addView(tiktok);tiktok.setOnClickListener(v->launch("com.zhiliaoapp.musically"));
         Button discord=button("Discord");box.addView(discord);discord.setOnClickListener(v->launch("com.discord"));
         Button youtube=button("YouTube");box.addView(youtube);youtube.setOnClickListener(v->launch("com.google.android.youtube"));
